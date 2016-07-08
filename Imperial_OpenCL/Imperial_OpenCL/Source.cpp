@@ -1,11 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#ifdef MAC
-#include <OpenCL/cl.h>
-#else
 #include <CL\cl.h>
-#endif
 int main() {
 	cl_platform_id platform;
 	cl_device_id *devices;
